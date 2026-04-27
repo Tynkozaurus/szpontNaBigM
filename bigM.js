@@ -15,10 +15,10 @@ const run = () => {
 });
 
 
+ const elements = document.querySelectorAll('.frequency-position__one-item.nieobecnosc');
 
 
-
-  const elements = document.querySelectorAll('.frequency-position__one-item.nieobecnosc');
+  
 
   console.log("elements:", elements.length);
 
@@ -43,6 +43,19 @@ if(el.closest('.tenDiv')){
       el.innerHTML = "O";
     }
   });
+
+
+
+const sneaky = document.querySelectorAll('.summary__number');
+
+sneaky.forEach(element => {
+  element.innerHTML = 0;
+});
+
+
+
+
+
 };
 
 setInterval(run, 100);
